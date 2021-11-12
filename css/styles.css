@@ -1,10 +1,4 @@
-body{
-    background-color: #0f171e;
-}
 
-nav.navbar {
-    background-color:#0f171e;
-}
 
 .navbar .navbar-nav .nav-link {
     color: rgba(242, 244, 246, 0.6);
@@ -49,6 +43,7 @@ nav ul li a:active {
 .btn-sm {
     padding: 0rem;
     margin-top: 0rem;
+
 }
 
 h2 {
@@ -72,3 +67,14 @@ h2 {
     border-radius: 0px;
     border-color: white;
 }
+
+} 
+footer a {
+    text-decoration: none;
+    color: rgba(242, 244, 246, 0.404);
+  }
+  
+  footer div a.btn {
+    color: rgba(242, 244, 246, 0.404);
+    border-color: rgba(242, 244, 246, 0.404);
+  }
