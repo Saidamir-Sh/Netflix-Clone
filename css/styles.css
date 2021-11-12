@@ -31,7 +31,7 @@ nav ul li a:active {
     top: 1em;
     right: 0em;
     z-index: 9999;
-    color: white ;
+    color: white    ;
 }
 
 .avatar {
@@ -43,6 +43,31 @@ nav ul li a:active {
 .btn-sm {
     padding: 0rem;
     margin-top: 0rem;
+
+}
+
+h2 {
+    color: white;
+}
+
+.btn-dark-genres {
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px;
+    border-color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+.icon-color {
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px;
+    border-color: white;
+}
+
 } 
 footer a {
     text-decoration: none;

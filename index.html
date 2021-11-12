@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <title>Netflix</title>
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-    <link href="css/styles.css" rel="stylesheet">
-    <title>Netflix</title>
-  </head>
   <body class="bg-dark">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark px-5">
@@ -57,6 +58,38 @@
       </div>
   
     </nav>
+      <div class="containerd-flex column mt-2 mx-5">
+      <div class="row">
+        <div class="col-12 d-inline d-flex justify-content-between">
+          <div class="d-inline d-flex align-items-center">
+
+
+            <h2 class="d-inline align-items-center">TV Shows</h2>
+
+            <div class="btn-group d-sm-none d-md-inline align-items-center mx-3 pt-0">
+              <button type="button" class="btn btn-dark-genres dropdown-toggle mr-4" data-toggle="dropdown" aria-expanded="false">
+                Genres
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="d-flex justify-content-end d-inline">
+            <div class="icon-color align-self-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-left"><line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line></svg>
+            </div>
+            <div class="icon-color align-self-center">
+              <i class="bi bi-dice-4"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   
   
      
@@ -180,6 +213,9 @@
       </div>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <script src="js/script.js"></script>
+    
+    
   </body>
-</html>
+  </html>
