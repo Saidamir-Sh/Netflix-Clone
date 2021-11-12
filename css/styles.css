@@ -10,8 +10,6 @@ nav.navbar {
     color: rgba(242, 244, 246, 0.6);
 }
 
-
-
 nav .navbar .navbar-nav .navbar-link {
     padding-left: 0;
     padding-right: 0;
@@ -22,7 +20,6 @@ nav .navbar .navbar-nav .navbar-link {
 nav ul li a {
     margin-right: 8px;
 }
-
 
 nav ul li a:hover {
     border-bottom: 1px solid white;
@@ -35,3 +32,21 @@ nav ul li a:active {
     font-weight: bolder;
 }
 
+.nav-right-section {
+    position: absolute;
+    top: 1em;
+    right: 5em;
+    z-index: 9999;
+    color: white    ;
+}
+
+.avatar {
+    width: 35px;
+    padding: 0px;
+}
+
+
+.btn-sm {
+    padding: 0rem;
+    margin-top: 0rem;
+}
