@@ -50,3 +50,25 @@ nav ul li a:active {
     padding: 0rem;
     margin-top: 0rem;
 }
+
+h2 {
+    color: white;
+}
+
+.btn-dark-genres {
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px;
+    border-color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+.icon-color {
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px;
+    border-color: white;
+}
