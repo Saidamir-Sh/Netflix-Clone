@@ -4,7 +4,6 @@ body{
 
 nav.navbar {
     background-color:#0f171e;
-    
 }
 
 .navbar .navbar-nav .navbar-link {
@@ -13,3 +12,9 @@ nav.navbar {
     padding-bottom: 0;
     margin-right: 8px;
 }
+
+nav ul li a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 0;
+}
+
