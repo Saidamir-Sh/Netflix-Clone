@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Netflix Profile</title>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/netflix_logo.png" width="10%" alt="Logo">
+      </a>
+    </nav>
+
+    <section class="container  mx-auto" style="width: 40%;">
+      <h1 class="text-light text-center">Edit Profile</h1>
+      <hr class="bg-light">
+      <div class="row  d-flex justify-content-center">
+        <div class="col-3">
+          <img src="./assets/avatar.png" class="img-fluid">
+        </div>
+        <div class="col">
+          <h5 class="text-light bg-secondary p-2 mb-1">Strive Student</h5>
+          <div class="input-group w-100">
+            <select class="custom-select w-50" id="inputGroupSelect04" aria-label="Example select with button addon">
+              <option selected>English</option>
+              <option value="1">Spanish</option>
+              <option value="2">Italian</option>
+              <option value="3">Russian</option>
+            </select>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Change</button>
+            </div>
+          </div>
+          <hr>
+          <div class="maturity-settings">
+            <h6 class="text-light">Maturity settings : </h6>
+            <p class="bg-secondary text-light p-2">All maturity ratings</p>
+            <p class="text-light">Show titles of all maturity ratings for this profile</p>
+            <button type="button" class="btn btn-outline-secondary">EDIT</button>
+            <hr class="bg-light">
+          </div>
+          <div class="autoplay-settings">
+            <p class="text-light">Autoplay controls</p>
+            <div class="input-group mb-1">
+              <div class="input-group-prepend">
+                <div>
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+              </div>
+              <small class="mx-1 text-light">Autoplay next episode ina series on all devices</small>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div>
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+              </div>
+              <small class="mx-1 text-light">Autoplay previews while browsing on all devices</small>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="row">
+        <div class="col-12 justify-content-between d-flex">
+          <button type="button" class="btn btn-light px-5">SAVE</button>
+          <button type="button" class="btn btn-outline-secondary px-5">CANCEL</button>
+          <button type="button" class="btn btn-outline-secondary px-5">DELETE PROFILE</button>
+        </div>
+      </div>
+    </section>
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>
+  </body>
+</html>
