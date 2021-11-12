@@ -35,16 +35,16 @@ nav ul li a:active {
 .nav-right-section {
     position: absolute;
     top: 1em;
-    right: 5em;
+    right: 0em;
     z-index: 9999;
     color: white    ;
 }
 
 .avatar {
     width: 35px;
+    height: 35px;
     padding: 0px;
 }
-
 
 .btn-sm {
     padding: 0rem;
