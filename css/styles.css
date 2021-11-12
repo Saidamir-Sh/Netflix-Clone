@@ -6,15 +6,25 @@ nav.navbar {
     background-color:#0f171e;
 }
 
-.navbar .navbar-nav .navbar-link {
+.navbar .navbar-nav .nav-link {
+    color: white;
+  }
+
+nav .navbar .navbar-nav .navbar-link {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
     margin-right: 8px;
 }
 
+nav ul li a {
+    margin-right: 8px;
+}
+
+
 nav ul li a:hover {
     border-bottom: 1px solid white;
     padding-bottom: 0;
+    margin-right: 8px;
 }
 
