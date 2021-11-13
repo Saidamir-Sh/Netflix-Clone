@@ -32,14 +32,39 @@ nav ul li a:visited {
 .nav-right-section {
     position: absolute;
     top: 1em;
-    right: 2em;
+    right: 0em;
     z-index: 9999;
     color: white;
+}
+
+@media (min-width: 768px){
+        .tv-shows-section-left-part {
+        position: absolute;
+        top: 5em;
+        right: 5.7em;
+        z-index: 9999;
+        color: white;
+    }
+}
+
+@media (min-width: 992px) {
+    .tv-shows-section-left-part {
+        position: absolute;
+        top: 5em;
+        right: 8.3em;
+        z-index: 9999;
+        color: white;
+    }
 }
 
 .dropdown-menu {
     right: 0;
     float: right;
+}
+
+.navbar-dark .navbar-toggler {
+    
+    border-color: rgba(255,255,255);
 }
 
 .avatar {
