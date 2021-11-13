@@ -21,7 +21,7 @@ nav ul li a:hover {
     margin-right: 8px;
 }
 
-nav ul li a:active {
+nav ul li a:visited {
     font-weight: bolder;
 }
 
@@ -39,12 +39,29 @@ nav ul li a:active {
     padding: 0px;
 }
 
-
-h2 {
-    color: white;
+.bi-caret-down-fill {
+    color: white    ;
 }
 
-a .avatar .btn .btn-dark{
+#avatar-button {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+h2 {
     color: white;
 }
 
@@ -70,8 +87,8 @@ footer a {
     text-decoration: none;
     color: rgba(242, 244, 246, 0.404);
 }
-  
+
 footer div a.btn {
-color: rgba(242, 244, 246, 0.404);
-border-color: rgba(242, 244, 246, 0.404);
+    color: rgba(242, 244, 246, 0.404);
+    border-color: rgba(242, 244, 246, 0.404);
 }
