@@ -1,4 +1,7 @@
-
+body {
+    background-color: black;
+    color: white;
+}
 
 .navbar .navbar-nav .nav-link {
     color: rgba(242, 244, 246, 0.6);
@@ -22,7 +25,7 @@ nav ul li a:hover {
     margin-right: 8px;
 }
 
-nav ul li a:active {
+nav ul li a:visited {
     font-weight: bolder;
 }
 
@@ -31,7 +34,37 @@ nav ul li a:active {
     top: 1em;
     right: 0em;
     z-index: 9999;
-    color: white    ;
+    color: white;
+}
+
+@media (min-width: 768px){
+        .tv-shows-section-left-part {
+        position: absolute;
+        top: 5em;
+        right: 5.7em;
+        z-index: 9999;
+        color: white;
+    }
+}
+
+@media (min-width: 992px) {
+    .tv-shows-section-left-part {
+        position: absolute;
+        top: 5em;
+        right: 8.3em;
+        z-index: 9999;
+        color: white;
+    }
+}
+
+.dropdown-menu {
+    right: 0;
+    float: right;
+}
+
+.navbar-dark .navbar-toggler {
+    
+    border-color: rgba(255,255,255);
 }
 
 .avatar {
@@ -40,10 +73,26 @@ nav ul li a:active {
     padding: 0px;
 }
 
-.btn-sm {
-    padding: 0rem;
-    margin-top: 0rem;
+.bi-caret-down-fill {
+    color: white    ;
+}
 
+#avatar-button {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 h2 {
@@ -68,13 +117,12 @@ h2 {
     border-color: white;
 }
 
-} 
 footer a {
     text-decoration: none;
     color: rgba(242, 244, 246, 0.404);
-  }
-  
-  footer div a.btn {
+}
+
+footer div a.btn {
     color: rgba(242, 244, 246, 0.404);
     border-color: rgba(242, 244, 246, 0.404);
-  }
+}
