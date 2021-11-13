@@ -30,7 +30,7 @@ nav ul li a:active {
     top: 1em;
     right: 0em;
     z-index: 9999;
-    color: white    ;
+    color: white;
 }
 
 .avatar {
@@ -39,13 +39,12 @@ nav ul li a:active {
     padding: 0px;
 }
 
-.btn-sm {
-    padding: 0rem;
-    margin-top: 0rem;
-
-}
 
 h2 {
+    color: white;
+}
+
+a .avatar .btn .btn-dark{
     color: white;
 }
 
@@ -67,13 +66,12 @@ h2 {
     border-color: white;
 }
 
-} 
 footer a {
     text-decoration: none;
     color: rgba(242, 244, 246, 0.404);
-  }
+}
   
-  footer div a.btn {
-    color: rgba(242, 244, 246, 0.404);
-    border-color: rgba(242, 244, 246, 0.404);
-  }
+footer div a.btn {
+color: rgba(242, 244, 246, 0.404);
+border-color: rgba(242, 244, 246, 0.404);
+}
