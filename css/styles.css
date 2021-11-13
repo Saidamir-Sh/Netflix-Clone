@@ -28,9 +28,14 @@ nav ul li a:visited {
 .nav-right-section {
     position: absolute;
     top: 1em;
-    right: 0em;
+    right: 2em;
     z-index: 9999;
     color: white;
+}
+
+.dropdown-menu {
+    right: 0;
+    float: right;
 }
 
 .avatar {
