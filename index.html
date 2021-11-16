@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Bootstrap CSS -->
+
+  <!-- I added this link to bootstrap css, it was missing and that's why the original template of bootstrap didn't work before. You can delete this comment after merging -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
   <link href="css/styles.css" rel="stylesheet">
@@ -13,63 +17,66 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <div class="container align-items-center">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-    
-      <a class="navbar-brand" href="./index.html"><img src="./assets/netflix_logo.png" alt="netflix clone logo" height="22px"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-    
-      <div class="collapse navbar-collapse collapse-showp" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-5">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#tv-shows">TV Shows</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Recently Added</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">My List</a>
-          </li>
-        </ul>
-        <div class="nav-right-section d-none d-md-flex d-md-inline mt-0">
-          <span class="d-flex ">
-            <i class="bi bi-search mx-2 align-self-center"></i>
-            <p class="mx-2 pt-3">KIDS</p>
-            <i class="bi bi-bell-fill mx-2 align-self-center"></i>
-            <div class="btn-group mx-2">
-              <div>
-                <a href="./profile.html" target="_blank"><img src="./assets/avatar.png" class="avatar btn btn-dark mt-2" alt="personal profile avatar"></a>
-                <button id="avatar-button" class="mt-2" type="button" data-toggle="dropdown" aria-expanded="false">
-                  <i class="bi bi-caret-down-fill"></i>
-                </button>
-                <div class="dropdown-menu">
-                  ...
-                </div>
+  <!--replace the oldest navbar with this new one than delete this comment-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent container align-items-center">
+    <a class="navbar-brand" href="./index.html"><img src="./assets/netflix_logo.png" alt="netflix clone logo" height="22px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#tv-shows">TV Shows<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recently Added</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My List</a>
+        </li>
+      </ul>
+      <div class="d-none d-md-flex d-md-inline">
+        <span class="d-flex ">
+          <i class="bi bi-search mx-2 align-self-center"></i>
+          <p class="mx-2 pt-3">KIDS</p>
+          <i class="bi bi-bell-fill mx-2 align-self-center"></i>
+          <div class="btn-group mx-2">
+            <div>
+              <a href="./profile.html" target="_blank"><img src="./assets/avatar.png" class="avatar btn btn-dark mt-2" alt="personal profile avatar"></a>
+              <button id="avatar-button" class="mt-2" type="button" data-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Action1</button>
+                  <button class="dropdown-item" type="button">Action2</button>
+                  <button class="dropdown-item" type="button">Action3</button>
               </div>
-            </span>
-          </div>
+            </div>
+          </span>
         </div>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
+
   
   <section id="tv-shows">
-    <div class="container d-flex column mt-3 align-items-center">
+    <div class="container">
       <div class="row">
-        <div class="col-12 d-flex d-inline">
-          <div class="d-inline d-flex align-items-center ">
+        <div class="col-12 d-md-flex d-block d-md-inline">
+          
+          <div class="d-flex d-inline align-items-center mr-auto">
             <h2 class="d-inline align-items-center">TV Shows</h2>
             <div class="btn-group d-sm-none d-md-inline align-items-center mx-3 pt-0">
-              <button type="button" class="btn btn-dark-genres dropdown-toggle mr-4" data-toggle="dropdown" aria-expanded="false">
-                Genres
+              <button type="button" class="btn btn-dark-genres dropdown-toggle ml-4" data-toggle="dropdown" aria-expanded="false">
+                <span class="pr-3">Genres</span>
               </button>
               <div class="dropdown-menu dropdown-menu-right">
                 <button class="dropdown-item" type="button">Action</button>
@@ -80,20 +87,20 @@
               </div>
             </div>
           </div>
-          
-          <div class="d-none d-md-flex d-md-inline ml-auto tv-shows-section-left-part">
-            <div class="icon-color align-self-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-left"><line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line></svg>
+        
+          <div class="d-flex d-md-flex d-md-inline mt-3 mt-md-0">
+            <div class="icon-border align-self-center align-middle">
+              <i class="bi bi-text-left d-flex justify-content-center"></i>
             </div>
-            <div class="icon-color align-self-center">
-              <i class="bi bi-dice-4"></i>
+            <div class="icon-border align-self-center align-middle">
+              <i class="bi bi-grid d-flex justify-content-center"></i>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </section>
+
   
   <!-- Movies Section -->
   <section class="container d-flex flex-column align-items-center pt-5">
