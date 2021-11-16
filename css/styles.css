@@ -3,8 +3,19 @@ body {
     color: white;
 }
 
+
 .navbar .navbar-nav .nav-link {
     color: rgba(242, 244, 246, 0.6);
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 0;
 }
 
 nav .navbar .navbar-nav .navbar-link {
@@ -15,56 +26,17 @@ nav .navbar .navbar-nav .navbar-link {
 }
 
 nav ul li a {
-    margin-right: 8px;
-}
-
-nav ul li a:hover {
-    border-bottom: 1px solid white;
-    color: white;
-    padding-bottom: 0;
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 nav ul li a:visited {
     font-weight: bolder;
 }
 
-.nav-right-section {
-    position: absolute;
-    top: 1em;
-    right: 0em;
-    z-index: 9999;
+
+
+span.navbar-toggler-icon {
     color: white;
-}
-
-@media (min-width: 768px){
-        .tv-shows-section-left-part {
-        position: absolute;
-        top: 5em;
-        right: 5.7em;
-        z-index: 9999;
-        color: white;
-    }
-}
-
-@media (min-width: 992px) {
-    .tv-shows-section-left-part {
-        position: absolute;
-        top: 5em;
-        right: 8.3em;
-        z-index: 9999;
-        color: white;
-    }
-}
-
-.dropdown-menu {
-    right: 0;
-    float: right;
-}
-
-.navbar-dark .navbar-toggler {
-    
-    border-color: rgba(255,255,255);
 }
 
 .avatar {
@@ -109,12 +81,29 @@ h2 {
     padding: 5px;
 }
 
-.icon-color {
+.btn-dark-genres:hover {
     color: white;
     border-width: 1px;
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(153, 153, 153, 0.72); 
+    box-shadow: 0px 0px 6px 3px rgba(153, 153, 153, 0.72);
     border-style: solid;
     border-radius: 0px;
     border-color: white;
+    background-color: black;
+}
+
+.icon-border {
+    color: rgba(242, 244, 246, 0.6);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px;
+    border-color: rgba(242, 244, 246, 0.6);
+    height: 22px;
+    width: 35px;
+}
+
+.bi::before{
+    line-height: 1.25;
 }
 
 footer a {
